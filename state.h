@@ -80,8 +80,8 @@ class statevector: public deque<matrix<Tm> >{
 				vector<Tm> rands1(_ncol);
 				vector_randn_boost(rands1, _ncol, 0, covstd[i][0] * covstd[i][0], -1, 1);
 				for(size_t j = 0;j < _ncol;++j)
-					(*this)[0][i][j] = rands1[j] + (x_b_bar(i,0) + 1) / 2;
-					//(*this)[0][i][j] = rands1[j] * covstd[j+1][0] +  (x_b_bar[j][0] + 1) / 2;
+					//(*this)[0][i][j] = rands1[j] + (x_b_bar(i,0) + 1) / 2;
+					(*this)[0][i][j] = rands1[j] * covstd[j+1][0] +  (x_b_bar[j][0] + 1) / 2;
 			    	
 					
 			}
