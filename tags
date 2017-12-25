@@ -1,0 +1,543 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AIC	xg_math_stat.h	/^    T AIC;$/;"	m	struct:regress_base
+AIC	xg_regression.h	/^        T AIC, dAIC;$/;"	m	class:xg_seg2_regress2
+AIC	xg_regression.h	/^        T AIC;$/;"	m	class:xg_regress2
+AverageRandom	xg_math_vector.h	/^double AverageRandom(double min, double max)$/;"	f
+BPCH_H	bpch.h	5;"	d
+BPLUT_file	configclass.h	/^	const char * BPLUT_file;$/;"	m	struct:fileconfig
+COMMON_H	common.h	5;"	d
+CONFIGCLASS_H	configclass.h	8;"	d
+CXX	Makefile	/^CXX=mpic++$/;"	m
+CXX_IBM	Makefile	/^CXX_IBM=mpic++ $/;"	m
+Cal_time	xg_datetime.h	/^clock_t Cal_time(clock_t& start_time)$/;"	f
+Class	configclass.h	/^	size_t Class;$/;"	m	struct:daconfig
+Coef	ensrf.h	/^	    MatrixXf Coef;$/;"	m	class:optimize
+CosZs	observeoperation.h	/^double CosZs;$/;"	v
+DAConfig	init.h	/^	DAConfig(){}$/;"	f	class:DAConfig
+DAConfig	init.h	/^class DAConfig{$/;"	c
+DA_config	init.h	/^	map<string, string> DA_config;$/;"	m	class:DAConfig
+DA_dir	configclass.h	/^	const char * DA_dir;$/;"	m	struct:fileconfig
+DA_itr	configclass.h	/^	int DA_itr;$/;"	m	struct:daconfig
+DA_length	configclass.h	/^	int DA_length;$/;"	m	struct:daconfig
+DebugConfig	common.h	/^void DebugConfig(const map<string,string> & config){$/;"	f
+ENSRF_H	ensrf.h	8;"	d
+ESS	xg_math_stat.h	/^    T TSS, ESS, RSS;$/;"	m	struct:regress_base
+F	xg_regression.h	/^        T F, p_value;$/;"	m	class:xg_regress2
+F	xg_regression.h	/^        T F;$/;"	m	class:xg_seg2_regress2
+FLAG	Makefile	/^FLAG=-std=c++0x$/;"	m
+Filename	xg_georaster.h	/^        string Filename;$/;"	m	class:GeoRaster
+Filename	xg_georaster_base.h	/^        string Filename;$/;"	m	class:GeoRaster
+Filter	xg_code.h	/^void Filter(T (*rf)(const vector<double>&,const vector<double>&, const double&), $/;"	f
+Filter	xg_code.h	/^void Filter(vector<T> (*rf)(const vector<double>&,const vector<double>&, const double&),$/;"	f
+GDAL	Makefile	/^GDAL = -I\/wps\/home\/linxf\/programFiles\/gdal-2.2.0\/gdal_az\/include\/ -L\/wps\/home\/linxf\/programFiles\/gdal-2.2.0\/gdal_az\/lib\/ -lgdal$/;"	m
+GPP	observeoperation.h	/^double GPP(const vector<double> & _a, const vector<double> & Na,int y,int x){$/;"	f
+GenType	xg_math_vector.h	/^typedef boost::variate_generator<boost::mt19937&, boost::normal_distribution<double> > GenType;$/;"	t
+GeoRaster	xg_georaster.h	/^class GeoRaster{$/;"	c
+GeoRaster	xg_georaster_base.h	/^class GeoRaster{$/;"	c
+GeoTiffWriter	xg_georaster.h	/^class GeoTiffWriter{$/;"	c
+GeoTiffWriter	xg_georaster_base.h	/^class GeoTiffWriter{$/;"	c
+GetHist	xg_georaster.h	/^map<eT, long long> GeoRaster::GetHist()const{$/;"	f	class:GeoRaster
+GetHist	xg_georaster_base.h	/^map<eT, long long> GeoRaster::GetHist()const{$/;"	f	class:GeoRaster
+Get_R	observationdata.h	/^	map<int, double> Get_R(OBS_DATA& obs)$/;"	f	class:obs_c
+HDF_LIB	Makefile	/^HDF_LIB=-lhdf5_hl -lhdf5$/;"	m
+HPHR	ensrf.h	/^	    map<int, double> HPHR,alpha;$/;"	m	class:optimize
+HPHt	ensrf.h	/^	    MatrixXf x_b_inflation,PHt,HPHt,K_gain;$/;"	m	class:optimize
+INIT_H	init.h	8;"	d
+INIT_H	oo_prepare.h	8;"	d
+INS_BOOST	Makefile	/^INS_BOOST=-I\/wps\/home\/linxf\/programFiles\/boost\/boost_az\/include$/;"	m
+INS_EIGEN	Makefile	/^INS_EIGEN=-I\/wps\/home\/linxf\/DA\/DA_tools\/eigen-eigen-5a0156e40feb$/;"	m
+INS_GDAL	Makefile	/^INS_GDAL=-I\/data1\/xubx\/develop_tools_az\/gdal\/include\/$/;"	m
+INS_HDF5	Makefile	/^INS_HDF5=-I\/share\/soft\/rhel6.2\/hdf5-1.8.8Parallel\/include\/$/;"	m
+INS_IBM	Makefile	/^INS_IBM=-I\/share\/soft\/rhel6.2\/netcdf-4.1.1Parallel\/include$/;"	m
+Initialize	ensrf.h	/^		void Initialize(statevector<double> x_b_lagMembers, OBS_DATA obs,daconfig dc)$/;"	f	class:optimize
+Initialize	init.h	/^	void Initialize(const char * conf, daconfig& dc, fileconfig& fc)$/;"	f	class:DAConfig
+Initialize	obs_back.h	/^	void Initialize(daconfig dc,fileconfig fc, mpi_config mpic, int mpi_rank,statevector<double> scal_x_a,const vector<observation>& obs, const datetime & DA_start, const datetime & DA_end, const datetime & DA_end_lag)$/;"	f	class:obs_operation
+Initialize	observationdata.h	/^	OBS_DATA Initialize(const datetime & DA_start, const datetime & DA_end,daconfig dc, fileconfig fc)$/;"	f	class:obs_c
+Initialize	observeoperation.h	/^	void Initialize(daconfig dc,fileconfig fc, mpi_config mpic, int mpi_rank,statevector<double> x_b_lagMembers,const vector<observation>& obs, const datetime & DA_start, const datetime & DA_end)$/;"	f	class:obs_operation
+Initialize	sample.h	/^	void Initialize(OBS_DATA& obs, datetime DA_start,datetime DA_end, daconfig dc, fileconfig fc)$/;"	f	class:Sample
+JD	xg_datetime.h	/^    double JD()const{\/\/unit : day$/;"	f	struct:datetime
+K	configclass.h	/^	size_t K;$/;"	m	struct:daconfig
+K	xg_math_stat.h	/^    size_t N\/*观测数*\/, K\/*自变量数*\/, df\/*自由度*\/;$/;"	m	struct:regress_base
+K1	xg_math_stat.h	/^    size_t N1, K1, N2, K2;$/;"	m	struct:regress2_seg2
+K2	xg_math_stat.h	/^    size_t N1, K1, N2, K2;$/;"	m	struct:regress2_seg2
+K_gain	ensrf.h	/^	    MatrixXf x_b_inflation,PHt,HPHt,K_gain;$/;"	m	class:optimize
+L	ensrf.h	/^	    double L;$/;"	m	class:optimize
+LD_GDAL	Makefile	/^LD_GDAL=-L\/data1\/xubx\/develop_tools_az\/gdal\/lib\/$/;"	m
+LD_HDF5	Makefile	/^LD_HDF5=-L\/share\/soft\/rhel6.2\/hdf5-1.8.8Parallel\/lib$/;"	m
+LD_IBM	Makefile	/^LD_IBM=-L\/share\/soft\/rhel6.2\/netcdf-4.1.1Parallel\/lib$/;"	m
+LUE_x	observeoperation.h	/^map<int,double> LUE_x;$/;"	v
+M	configclass.h	/^	size_t M;$/;"	m	struct:daconfig
+N	xg_math_stat.h	/^    size_t N\/*观测数*\/, K\/*自变量数*\/, df\/*自由度*\/;$/;"	m	struct:regress_base
+N1	xg_math_stat.h	/^    size_t N1, K1, N2, K2;$/;"	m	struct:regress2_seg2
+N2	xg_math_stat.h	/^    size_t N1, K1, N2, K2;$/;"	m	struct:regress2_seg2
+NC_LIB	Makefile	/^NC_LIB=-lnetcdf_c++ -lnetcdf$/;"	m
+Normal	xg_math_vector.h	/^double Normal(double x, double miu, double sigma)$/;"	f
+NormalDis	xg_math_vector.h	/^typedef boost::normal_distribution<> NormalDis;$/;"	t
+NormalRandom	xg_math_vector.h	/^double NormalRandom(double miu, double sigma, double min, double max)$/;"	f
+OBERVATIONDATA_H	observationdata.h	8;"	d
+OBERVEOPERATION_H	obs_back.h	8;"	d
+OBERVEOPERATION_H	observeoperation.h	12;"	d
+OBS_DATA	configclass.h	/^typedef vector<observation> OBS_DATA;$/;"	t
+OBS_INDEX	configclass.h	/^typedef map<pair<int, int>, vector<pair<double, int> > > OBS_INDEX;$/;"	t
+PHt	ensrf.h	/^	    MatrixXf x_b_inflation,PHt,HPHt,K_gain;$/;"	m	class:optimize
+P_b	ensrf.h	/^	    MatrixXf P_b;$/;"	m	class:optimize
+R2	xg_math_stat.h	/^    T R2, R2_adj;$/;"	m	struct:regress_base
+R2	xg_regression.h	/^        T R2, adj_R2;$/;"	m	class:xg_regress2
+R2	xg_regression.h	/^        T R2, adj_R2;$/;"	m	class:xg_seg2_regress2
+R2_adj	xg_math_stat.h	/^    T R2, R2_adj;$/;"	m	struct:regress_base
+REGIONS_MAP	configclass.h	/^typedef map<int, map<int, int > > REGIONS_MAP;$/;"	t
+REGIONS_MAP	main.cpp	/^ typedef map<int, map<int, int > > REGIONS_MAP;$/;"	t	file:
+RSS	xg_math_stat.h	/^    T TSS, ESS, RSS;$/;"	m	struct:regress_base
+ReadAsArray	xg_code.h	/^vector<vector<double> > ReadAsArray(GDALRasterBand* band, int startX, int startY, int XSize, int YSize){$/;"	f
+ReadConfig	common.h	/^void ReadConfig(const char * conf_file, map<string, string>& config){$/;"	f
+ReadLine	xg_code.h	/^vector<double> ReadLine(GDALRasterBand* band, int lineid){$/;"	f
+Reduce	xg_code.h	/^T Reduce($/;"	f
+Reduce	xg_code.h	/^T Reduce(void (*rf)(const vector<double>&, const vector<double>&, int,int), const vector<string>& infs, T init_value = T()){$/;"	f
+Reduce	xg_code.h	/^void Reduce(T (*rf)(const vector<double>&, const vector<double>&), const vector<string>& infs, const string & outfs, GDALDataType outType, double DstNodata){$/;"	f
+Reduce	xg_code.h	/^void Reduce(T (*rf)(const vector<double>&, const vector<double>&,int,int), const vector<string>& infs, const string & outfs, GDALDataType outType, double DstNodata){$/;"	f
+Reduce	xg_code.h	/^void Reduce(vector<T> (*rf)(const vector<double>&, const vector<double>&), const vector<string>& infs, const string & outfs, int outBandCount, GDALDataType outType, double DstNodata){$/;"	f
+Reg1	xg_regression.h	/^        xg_regress2<T> Reg1, Reg2;$/;"	m	class:xg_seg2_regress2
+Reg2	xg_regression.h	/^        xg_regress2<T> Reg1, Reg2;$/;"	m	class:xg_seg2_regress2
+Residuals	xg_regression.h	/^        vector<T> estimated, Residuals;$/;"	m	class:xg_regress2
+Residuals	xg_regression.h	/^        vector<T> estimated, Residuals;$/;"	m	class:xg_seg2_regress2
+Run	ensrf.h	/^		statevector<double> Run(daconfig dc, OBS_DATA obs,map<int, double> R,MatrixXf& x_b_bar_temp, REGIONS_MAP regions,map<int, vector<pair<int, int> > >& regions_index, double tau_start,fileconfig fc,const datetime & DA_start, const datetime & DA_end)$/;"	f	class:optimize
+Run_posterior	obs_back.h	/^	void Run_posterior(daconfig dc, fileconfig fc, vector<double> scal_posterior_x_a,OBS_DATA obs, datetime DA_start, datetime DA_end)$/;"	f	class:obs_operation
+Run_posterior	observeoperation.h	/^	void Run_posterior(daconfig dc, fileconfig fc, MatrixXf x_b_bar,OBS_DATA obs, datetime DA_start, datetime DA_end)$/;"	f	class:obs_operation
+SAMPLE_H	sample.h	8;"	d
+SAVE_MPI_Config	init.h	/^mpi_config SAVE_MPI_Config(int mpi_size, int mpi_rank, int mpi_name_len, char * mpi_host_name)$/;"	f
+STATE_H	state.h	8;"	d
+Sample	sample.h	/^	Sample(){}$/;"	f	class:Sample
+Sample	sample.h	/^class Sample{$/;"	c
+TSS	xg_math_stat.h	/^    T TSS, ESS, RSS;$/;"	m	struct:regress_base
+WriteConfig	common.h	/^void WriteConfig(const char * conf_file, const map<string, string>& config){$/;"	f
+WriteLine	xg_code.h	/^void WriteLine(GDALRasterBand * band, void * p,int lineID){$/;"	f
+XG_CODE_H	xg_code.h	5;"	d
+XG_DATETIME_H	xg_datetime.h	5;"	d
+XG_DEBUG_H	xg_debug.h	5;"	d
+XG_GEORASTER_BASE_H	xg_georaster.h	5;"	d
+XG_GEORASTER_BASE_H	xg_georaster_base.h	5;"	d
+XG_GEORASTER_REDUCE_H	xg_georaster_reduce.h	5;"	d
+XG_GEORASTER_TRANSFORM_H	xg_georaster_transform.h	5;"	d
+XG_MAP_MATH_H	xg_map_math.h	5;"	d
+XG_MATH_BASE_H	xg_math_base.h	5;"	d
+XG_MATH_H	xg_math.h	5;"	d
+XG_MATH_MATRIX_H	xg_math_matrix.h	5;"	d
+XG_MATH_STAT_H	xg_math_stat.h	5;"	d
+XG_MATH_VECTOR_H	xg_math_vector.h	5;"	d
+XG_MATH_VECTOR_H	xg_vector_math.h	5;"	d
+XG_RASTERREDUCE_H	xg_rasterreduce.h	5;"	d
+XG_REGRESSION_H	xg_regression.h	5;"	d
+XG_STR_H	xg_str.h	5;"	d
+XSIZE	configclass.h	/^	int XSIZE;$/;"	m	struct:daconfig
+XSize	xg_georaster.h	/^        int XSize,YSize;$/;"	m	class:GeoTiffWriter
+XSize	xg_georaster_base.h	/^        int XSize,YSize;$/;"	m	class:GeoTiffWriter
+X_b	ensrf.h	/^            	MatrixXf X_b,x_b_bar;$/;"	m	class:optimize
+YSIZE	configclass.h	/^	int YSIZE;$/;"	m	struct:daconfig
+YSize	xg_georaster.h	/^        int XSize,YSize;$/;"	m	class:GeoTiffWriter
+YSize	xg_georaster_base.h	/^        int XSize,YSize;$/;"	m	class:GeoTiffWriter
+YYYYMMDD	xg_datetime.h	/^    string YYYYMMDD(){$/;"	f	struct:datetime
+YYYYMMDDhhmm	xg_datetime.h	/^    string YYYYMMDDhhmm(){$/;"	f	struct:datetime
+YYYYMMDDhhmmss	xg_datetime.h	/^    string YYYYMMDDhhmmss(){$/;"	f	struct:datetime
+Y_b	ensrf.h	/^            MatrixXf Y_b, y_o, y_b, y_b_bar, y_b_bar_met;$/;"	m	class:optimize
+a	xg_regression.h	/^        T a, a_std_err, a_t_value, a_p_value;$/;"	m	class:xg_regress2
+a_p_value	xg_regression.h	/^        T a, a_std_err, a_t_value, a_p_value;$/;"	m	class:xg_regress2
+a_std_err	xg_regression.h	/^        T a, a_std_err, a_t_value, a_p_value;$/;"	m	class:xg_regress2
+a_t_value	xg_regression.h	/^        T a, a_std_err, a_t_value, a_p_value;$/;"	m	class:xg_regress2
+abs	xg_math_vector.h	/^    vector<T> abs(const vector<T>& a){$/;"	f
+abs	xg_vector_math.h	/^    vector<T> abs(const vector<T>& a){$/;"	f
+adj_R2	xg_regression.h	/^        T R2, adj_R2;$/;"	m	class:xg_regress2
+adj_R2	xg_regression.h	/^        T R2, adj_R2;$/;"	m	class:xg_seg2_regress2
+alpha	ensrf.h	/^	    map<int, double> HPHR,alpha;$/;"	m	class:optimize
+alt	configclass.h	/^    int geosI,geosJ,alt;$/;"	m	struct:observation
+assessment	xg_math_stat.h	/^    void assessment(){$/;"	f	struct:regress_base
+b	xg_math_stat.h	/^    vector<T> y, b, estimated, residuals;$/;"	m	struct:regress_base
+b	xg_regression.h	/^        T b, b_std_err, b_t_value, b_p_value;$/;"	m	class:xg_regress2
+b2	xg_math_stat.h	/^    T  fvalue, pvalue,b2;$/;"	m	struct:regress_base
+b_p_value	xg_regression.h	/^        T b, b_std_err, b_t_value, b_p_value;$/;"	m	class:xg_regress2
+b_std_err	xg_regression.h	/^        T b, b_std_err, b_t_value, b_p_value;$/;"	m	class:xg_regress2
+b_t_value	xg_regression.h	/^        T b, b_std_err, b_t_value, b_p_value;$/;"	m	class:xg_regress2
+band	xg_georaster.h	/^        GDALRasterBand *band;$/;"	m	class:GeoTiffWriter
+band	xg_georaster_base.h	/^        GDALRasterBand *band;$/;"	m	class:GeoTiffWriter
+bandcount	xg_georaster.h	/^        int bandcount;$/;"	m	class:GeoRaster
+bandcount	xg_georaster_base.h	/^        int bandcount;$/;"	m	class:GeoRaster
+bands	xg_georaster.h	/^        vector<GDALRasterBand *> bands;$/;"	m	class:GeoRaster
+bands	xg_georaster_base.h	/^        vector<GDALRasterBand *> bands;$/;"	m	class:GeoRaster
+bitswap	bpch.h	/^T bitswap(T v){$/;"	f
+bpch	bpch.h	/^        bpch(const char* _f, const char* _t)$/;"	f	class:bpch
+bpch	bpch.h	/^        bpch(const string& f ){$/;"	f	class:bpch
+bpch	bpch.h	/^class bpch{$/;"	c
+bpch_f	bpch.h	/^        fstream bpch_f;$/;"	m	class:bpch
+breakpoint	xg_regression.h	/^        int breakpoint;$/;"	m	class:xg_seg2_regress2
+breakx	xg_math_stat.h	/^    T breakx()const{$/;"	f	struct:regress2_seg2
+build_index	observationdata.h	/^OBS_INDEX build_index(const vector<observation>& obs){$/;"	f
+cal_CosZs	observeoperation.h	/^void cal_CosZs(const double lat,const double lon,const int hour,const int day,const int month,const double clumping){$/;"	f
+category	bpch.h	/^        char modelname[21] , category[41] , unit[41] , reserved[41] ;$/;"	m	class:datablock
+center180	bpch.h	/^        int halfpolar, center180, tracer, dim[6], skip;$/;"	m	class:datablock
+chol	xg_math_matrix.h	/^    matrix<mT> chol(const matrix<mT>& A)$/;"	f
+clear_str	bpch.h	/^        void clear_str(){$/;"	f	class:bpch
+clear_str	bpch.h	/^        void clear_str(){$/;"	f	class:datablock
+cmd	common.h	/^void cmd(string s, bool show = true){$/;"	f
+cmp_1st	xg_math_vector.h	/^    bool cmp_1st(const pair<T1, T2>& a, const pair<T1, T2>& b){$/;"	f
+cmp_1st	xg_vector_math.h	/^    bool cmp_1st(const pair<T1, T2>& a, const pair<T1, T2>& b){$/;"	f
+col	xg_math_matrix.h	/^            vector<mT> col(size_t i){$/;"	f	class:matrix
+col_ref	xg_math_matrix.h	/^			col_ref(){}$/;"	f	class:col_ref
+col_ref	xg_math_matrix.h	/^			col_ref(vector<mT>& col){$/;"	f	class:col_ref
+col_ref	xg_math_matrix.h	/^	class col_ref: public vector< mT*>{$/;"	c
+colmean	xg_math_matrix.h	/^	matrix<mT> colmean(const matrix<mT>& m){$/;"	f
+computeAIC	xg_math_stat.h	/^    void computeAIC(){$/;"	f	struct:regress_base
+computeAIC	xg_regression.h	/^        void computeAIC(){$/;"	f	class:xg_regress2
+computeAIC	xg_regression.h	/^        void computeAIC(){$/;"	f	class:xg_seg2_regress2
+computeR2	xg_math_stat.h	/^T computeR2(const vector<T>& _y,const vector<T>& fited){$/;"	f
+cor	xg_math_stat.h	/^T cor(const vector<T>& x, const vector<T>& y, T & p_value, string method="pearson"){$/;"	f
+cor	xg_math_stat.h	/^T cor(const vector<T>& x, const vector<T>& y, string method="pearson"){$/;"	f
+cos	xg_math_vector.h	/^    vector<T> cos(const vector<T>& a){$/;"	f
+cos	xg_vector_math.h	/^    vector<T> cos(const vector<T>& a){$/;"	f
+cov	xg_math_stat.h	/^T cov(const vector<T>& x, const vector<T>& y){$/;"	f
+dAIC	xg_math_stat.h	/^    double dAIC;$/;"	m	struct:regress2_seg2
+dAIC	xg_regression.h	/^        T AIC, dAIC;$/;"	m	class:xg_seg2_regress2
+daconfig	configclass.h	/^struct daconfig{$/;"	s
+data	bpch.h	/^        vector< vector< vector<float> > > data;  \/\/ $/;"	m	class:datablock
+data	xg_math_stat.h	/^        vector<vector<T> > data;$/;"	m	class:pcorr
+datablock	bpch.h	/^        datablock():$/;"	f	class:datablock
+datablock	bpch.h	/^        datablock(int d1, int d2, int d3, int d4, int d5, int d6):$/;"	f	class:datablock
+datablock	bpch.h	/^class datablock{$/;"	c
+datablocks	bpch.h	/^        vector<datablock> datablocks;$/;"	m	class:bpch
+dataset	xg_georaster.h	/^        GDALDataset *dataset;$/;"	m	class:GeoRaster
+dataset	xg_georaster.h	/^        GDALDataset *dataset;$/;"	m	class:GeoTiffWriter
+dataset	xg_georaster_base.h	/^        GDALDataset *dataset;$/;"	m	class:GeoRaster
+dataset	xg_georaster_base.h	/^        GDALDataset *dataset;$/;"	m	class:GeoTiffWriter
+datetime	xg_datetime.h	/^    datetime(const string& datestr, const string& frmt = "YYYY-MM-DD hh:mm:ss"){$/;"	f	struct:datetime
+datetime	xg_datetime.h	/^    datetime(int y = 1970, int M = 1, int d = 1, int h=0, int m=0, int s=0):$/;"	f	struct:datetime
+datetime	xg_datetime.h	/^struct datetime{$/;"	s
+day	observeoperation.h	/^int hour,day,month;$/;"	v
+day	xg_datetime.h	/^    int year, month, day, hour, minute, seconds;$/;"	m	struct:datetime
+day	xg_datetime.h	/^    int year, month, day, hour, minute, seconds;$/;"	m	struct:timespan
+debug	xg_debug.h	7;"	d
+det	xg_math_matrix.h	/^    mT det(matrix<mT>  m){$/;"	f
+df	xg_math_stat.h	/^    size_t N\/*观测数*\/, K\/*自变量数*\/, df\/*自由度*\/;$/;"	m	struct:regress_base
+diag	xg_math_matrix.h	/^    vector<mT> diag(const matrix<mT>& m)$/;"	f
+diff	xg_math_vector.h	/^    vector<T> diff(const vector<T>& a){$/;"	f
+diff	xg_vector_math.h	/^    vector<T> diff(const vector<T>& a){$/;"	f
+dim	bpch.h	/^        int halfpolar, center180, tracer, dim[6], skip;$/;"	m	class:datablock
+dot	xg_math_matrix.h	/^    matrix<mT> dot(const matrix<mT>& a,const vector<mT>& b){$/;"	f
+end_date	configclass.h	/^	datetime end_date;$/;"	m	struct:daconfig
+equal_assert	xg_georaster.h	/^bool equal_assert(const GeoRaster & a, const GeoRaster & b, double eps = 1e-9){$/;"	f
+equal_assert	xg_georaster_base.h	/^bool equal_assert(const GeoRaster & a, const GeoRaster & b, double eps = 1e-9){$/;"	f
+estimate	xg_math_stat.h	/^    void estimate(){$/;"	f	struct:regress_base
+estimated	xg_math_stat.h	/^    vector<T> y, b, estimated, residuals;$/;"	m	struct:regress_base
+estimated	xg_regression.h	/^        vector<T> estimated, Residuals;$/;"	m	class:xg_regress2
+estimated	xg_regression.h	/^        vector<T> estimated, Residuals;$/;"	m	class:xg_seg2_regress2
+fileconfig	configclass.h	/^struct fileconfig{$/;"	s
+filename	bpch.h	/^        string filename;$/;"	m	class:bpch
+ftest	xg_math_stat.h	/^    void ftest(){$/;"	f	struct:regress_base
+ftype	bpch.h	/^        char ftype[41] , toptitle[81] ;$/;"	m	class:bpch
+fvalue	xg_math_stat.h	/^    T  fvalue, pvalue,b2;$/;"	m	struct:regress_base
+generate_x	init.h	/^statevector<double> generate_x(int mpi_rank, daconfig dc,map<int,vector<pair<int,int> > >& regions_index)$/;"	f
+geosI	configclass.h	/^    double geosI,geosJ;$/;"	m	struct:mod_data
+geosI	configclass.h	/^    int geosI,geosJ,alt;$/;"	m	struct:observation
+geosJ	configclass.h	/^    double geosI,geosJ;$/;"	m	struct:mod_data
+geosJ	configclass.h	/^    int geosI,geosJ,alt;$/;"	m	struct:observation
+get_col	xg_math_matrix.h	/^	    vector<mT> get_col(size_t c){$/;"	f	class:matrix
+get_next	xg_math_base.h	/^void get_next(const char* p, int plen ,int* next){$/;"	f
+get_rank	xg_math_vector.h	/^    vector<double> get_rank(const vector<T> & a){$/;"	f
+get_rank	xg_vector_math.h	/^    vector<double> get_rank(const vector<T> & a){$/;"	f
+get_row	xg_math_matrix.h	/^	    vector<mT> get_row(size_t r){$/;"	f	class:matrix
+get_rows	xg_math_matrix.h	/^	    matrix<mT> get_rows(const vector<size_t> select){$/;"	f	class:matrix
+grid_xres	configclass.h	/^	double grid_xres;$/;"	m	struct:daconfig
+grid_yres	configclass.h	/^	double grid_yres;$/;"	m	struct:daconfig
+halfpolar	bpch.h	/^        int halfpolar, center180, tracer, dim[6], skip;$/;"	m	class:datablock
+host_name	configclass.h	/^    char* host_name;$/;"	m	struct:mpi_config
+hour	observeoperation.h	/^int hour,day,month;$/;"	v
+hour	xg_datetime.h	/^    int year, month, day, hour, minute, seconds;$/;"	m	struct:datetime
+hour	xg_datetime.h	/^    int year, month, day, hour, minute, seconds;$/;"	m	struct:timespan
+in_dir	configclass.h	/^	const char * in_dir;$/;"	m	struct:fileconfig
+index_x	ensrf.h	/^	    int index_x;$/;"	m	class:optimize
+init_BPLUT	observeoperation.h	/^void init_BPLUT(const char *filename){$/;"	f
+isleapyear	xg_datetime.h	/^bool isleapyear(int y){$/;"	f
+kmp_match	xg_math_base.h	/^int kmp_match(const char* t,const char* p){$/;"	f
+lai_dir	configclass.h	/^	const char * lai_dir;	$/;"	m	struct:fileconfig
+landcover_file	configclass.h	/^	const char * landcover_file;$/;"	m	struct:fileconfig
+lat	configclass.h	/^    double lat, lon;$/;"	m	struct:observation
+loadA	xg_math_matrix.h	/^	    void loadA(const char* f){$/;"	f	class:matrix
+loadB	xg_math_matrix.h	/^	 void loadB(const char* f){$/;"	f	class:matrix
+load_array	xg_math_matrix.h	/^	    void load_array(const mT* a){$/;"	f	class:matrix
+load_array	xg_math_matrix.h	/^  	    matrix& load_array(aa loadarr){$/;"	f	class:matrix
+lon	configclass.h	/^    double lat, lon;$/;"	m	struct:observation
+lookup_obs	sample.h	/^int lookup_obs(const OBS_INDEX& index, int x, int y, double tau, double max_diff = 0.25,int i=0){$/;"	f
+main	bpchdump.cpp	/^int main(int argc, char *argv[])$/;"	f
+main	main.cpp	/^int main(int argc, char *argv[])$/;"	f
+matrix	xg_math_matrix.h	/^            matrix(){}$/;"	f	class:matrix
+matrix	xg_math_matrix.h	/^            matrix(const vector<mT> vec, size_t _ncol = 1):$/;"	f	class:matrix
+matrix	xg_math_matrix.h	/^            matrix(const vector<vector<mT> >& _V):$/;"	f	class:matrix
+matrix	xg_math_matrix.h	/^            matrix(size_t _nrow, size_t _ncol, mT v = 0 , int flag = 1):$/;"	f	class:matrix
+matrix	xg_math_matrix.h	/^    class matrix: public vector< vector< mT> >{$/;"	c
+matrix_one	xg_math_matrix.h	/^    matrix<eT> matrix_one(size_t k)$/;"	f
+max	xg_math_vector.h	/^    T max(const vector<T>& a){$/;"	f
+max	xg_vector_math.h	/^    T max(const vector<T>& a){$/;"	f
+mdm	configclass.h	/^    double value,mdm;$/;"	m	struct:mod_data
+mdm	configclass.h	/^    double value,mdm;$/;"	m	struct:observation
+mean	xg_math_vector.h	/^    T mean(const vector<T>& a){$/;"	f
+mean	xg_vector_math.h	/^    T mean(const vector<T>& a){$/;"	f
+memtrash	xg_georaster.h	/^        vector<void *> memtrash;$/;"	m	class:GeoRaster
+memtrash	xg_georaster_base.h	/^        vector<void *> memtrash;$/;"	m	class:GeoRaster
+min	xg_math_vector.h	/^    T min(const vector<T>& a){$/;"	f
+min	xg_vector_math.h	/^    T min(const vector<T>& a){$/;"	f
+minute	xg_datetime.h	/^    int year, month, day, hour, minute, seconds;$/;"	m	struct:datetime
+minute	xg_datetime.h	/^    int year, month, day, hour, minute, seconds;$/;"	m	struct:timespan
+mod_data	configclass.h	/^struct mod_data{$/;"	s
+modeled_v	configclass.h	/^    vector<double> modeled_v;$/;"	m	struct:observation
+modelname	bpch.h	/^        char modelname[21] , category[41] , unit[41] , reserved[41] ;$/;"	m	class:datablock
+modelres_lat	bpch.h	/^        float modelres_lon, modelres_lat;$/;"	m	class:datablock
+modelres_lon	bpch.h	/^        float modelres_lon, modelres_lat;$/;"	m	class:datablock
+monStr	xg_datetime.h	/^const char* monStr[] = {"JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"};$/;"	v
+month	observeoperation.h	/^int hour,day,month;$/;"	v
+month	xg_datetime.h	/^    int year, month, day, hour, minute, seconds;$/;"	m	struct:datetime
+month	xg_datetime.h	/^    int year, month, day, hour, minute, seconds;$/;"	m	struct:timespan
+monthlength	xg_datetime.h	/^int monthlength[]={$/;"	v
+monthmax	xg_datetime.h	/^    int monthmax()const{$/;"	f	struct:datetime
+mpi_config	configclass.h	/^struct mpi_config{$/;"	s
+msecond	xg_datetime.h	/^    double msecond;$/;"	m	struct:datetime
+msecond	xg_datetime.h	/^    double msecond;$/;"	m	struct:timespan
+name_len	configclass.h	/^    int size, rank, name_len;$/;"	m	struct:mpi_config
+ncol	xg_math_matrix.h	/^            size_t ncol()const{$/;"	f	class:matrix
+nlag	configclass.h	/^	int nlag;$/;"	m	struct:daconfig
+norm2	xg_math_vector.h	/^    T norm2(const vector<T>& a){$/;"	f
+norm2	xg_vector_math.h	/^    T norm2(const vector<T>& a){$/;"	f
+nrow	xg_math_matrix.h	/^            size_t nrow()const{$/;"	f	class:matrix
+obs_c	observationdata.h	/^	obs_c(){}$/;"	f	class:obs_c
+obs_c	observationdata.h	/^class obs_c$/;"	c
+obs_f	configclass.h	/^	const char * obs_f;$/;"	m	struct:fileconfig
+obs_operation	obs_back.h	/^	obs_operation(){}$/;"	f	class:obs_operation
+obs_operation	obs_back.h	/^class obs_operation$/;"	c
+obs_operation	observeoperation.h	/^	obs_operation(){}$/;"	f	class:obs_operation
+obs_operation	observeoperation.h	/^class obs_operation$/;"	c
+observation	configclass.h	/^struct observation{$/;"	s
+operator ()	xg_math_matrix.h	/^			mT& operator()(size_t i){$/;"	f	class:col_ref
+operator ()	xg_math_matrix.h	/^	    mT& operator()(size_t i, size_t j){$/;"	f	class:matrix
+operator ()	xg_math_matrix.h	/^            mT operator()(size_t i, size_t j)const{$/;"	f	class:matrix
+operator ()	xg_math_stat.h	/^        pcorr& operator()(const vector<vector<T> > & d, string method="pearson"){$/;"	f	class:pcorr
+operator *	xg_math_matrix.h	/^    matrix<mT> operator*(const matrix<mT>& a,const matrix<mT>& b){$/;"	f
+operator *	xg_math_matrix.h	/^   matrix<T1> operator*(const matrix<T1>& a,const T2& b){$/;"	f
+operator *	xg_math_matrix.h	/^   matrix<mT> operator*(const matrix<mT>& a,const mT& b){$/;"	f
+operator *	xg_math_vector.h	/^    vector<T1> operator*(const T2& a, const vector<T1>& b){$/;"	f
+operator *	xg_math_vector.h	/^    vector<T1> operator*(const vector<T1>& a, const T2& b){$/;"	f
+operator *	xg_math_vector.h	/^    vector<T1> operator*(const vector<T1>& a, const vector<T2>& b){$/;"	f
+operator *	xg_vector_math.h	/^    vector<T1> operator*(const T2& a, const vector<T1>& b){$/;"	f
+operator *	xg_vector_math.h	/^    vector<T1> operator*(const vector<T1>& a, const T2& b){$/;"	f
+operator *	xg_vector_math.h	/^    vector<T1> operator*(const vector<T1>& a, const vector<T2>& b){$/;"	f
+operator *=	xg_math_matrix.h	/^            col_ref& operator*=(const vector<mT>& col){$/;"	f	class:col_ref
+operator *=	xg_math_matrix.h	/^            col_ref& operator*=(mT v){$/;"	f	class:col_ref
+operator +	xg_datetime.h	/^datetime operator+(datetime d1, const timespan& s){$/;"	f
+operator +	xg_map_math.h	/^map<T1, T2> operator+(map<T1, T2> a, const map<T1, T2> &b){$/;"	f
+operator +	xg_math_matrix.h	/^    matrix<mT> operator+(const matrix<mT>& a,const matrix<mT>& b){$/;"	f
+operator +	xg_math_matrix.h	/^   matrix<mT> operator+(const matrix<mT>& a,const vector<mT>& b){$/;"	f
+operator +	xg_math_vector.h	/^    vector<T1> operator+(const T2& a, const vector<T1>& b){$/;"	f
+operator +	xg_math_vector.h	/^    vector<T1> operator+(const vector<T1>& a, const T2& b){$/;"	f
+operator +	xg_math_vector.h	/^    vector<T1> operator+(const vector<T1>& a, const vector<T2>& b){$/;"	f
+operator +	xg_vector_math.h	/^    vector<T1> operator+(const T2& a, const vector<T1>& b){$/;"	f
+operator +	xg_vector_math.h	/^    vector<T1> operator+(const vector<T1>& a, const T2& b){$/;"	f
+operator +	xg_vector_math.h	/^    vector<T1> operator+(const vector<T1>& a, const vector<T2>& b){$/;"	f
+operator +=	xg_datetime.h	/^datetime operator+=(datetime& d1, const timespan& s){$/;"	f
+operator +=	xg_math_matrix.h	/^			col_ref& operator+=(const vector<mT>& col){$/;"	f	class:col_ref
+operator +=	xg_math_matrix.h	/^		col_ref& operator+=(mT v){$/;"	f	class:col_ref
+operator -	xg_datetime.h	/^datetime operator-(datetime d1, const timespan& s){$/;"	f
+operator -	xg_math_matrix.h	/^    matrix<mT> operator-(const matrix<mT>& a,const matrix<mT>& b){$/;"	f
+operator -	xg_math_vector.h	/^    vector<T1> operator-(const T2& a, const vector<T1>& b){$/;"	f
+operator -	xg_math_vector.h	/^    vector<T1> operator-(const vector<T1>& a, const T2& b){$/;"	f
+operator -	xg_math_vector.h	/^    vector<T1> operator-(const vector<T1>& a, const vector<T2>& b){$/;"	f
+operator -	xg_vector_math.h	/^    vector<T1> operator-(const T2& a, const vector<T1>& b){$/;"	f
+operator -	xg_vector_math.h	/^    vector<T1> operator-(const vector<T1>& a, const T2& b){$/;"	f
+operator -	xg_vector_math.h	/^    vector<T1> operator-(const vector<T1>& a, const vector<T2>& b){$/;"	f
+operator -=	xg_math_matrix.h	/^			col_ref& operator-=(const vector<mT>& col){$/;"	f	class:col_ref
+operator -=	xg_math_matrix.h	/^		col_ref& operator-=(mT v){$/;"	f	class:col_ref
+operator /	xg_math_matrix.h	/^    matrix<T1> operator\/(const matrix<T1>& a,const T2& b){$/;"	f
+operator /	xg_math_matrix.h	/^    matrix<mT> operator\/(const matrix<mT>& a,const matrix<mT>& b){$/;"	f
+operator /	xg_math_vector.h	/^    vector<T1> operator\/(const T2& a, const vector<T1>& b){$/;"	f
+operator /	xg_math_vector.h	/^    vector<T1> operator\/(const vector<T1>& a, const T2& b){$/;"	f
+operator /	xg_math_vector.h	/^    vector<T1> operator\/(const vector<T1>& a, const vector<T2>& b){$/;"	f
+operator /	xg_vector_math.h	/^    vector<T1> operator\/(const T2& a, const vector<T1>& b){$/;"	f
+operator /	xg_vector_math.h	/^    vector<T1> operator\/(const vector<T1>& a, const T2& b){$/;"	f
+operator /	xg_vector_math.h	/^    vector<T1> operator\/(const vector<T1>& a, const vector<T2>& b){$/;"	f
+operator /=	xg_math_matrix.h	/^            col_ref& operator\/=(const vector<mT>& col){$/;"	f	class:col_ref
+operator /=	xg_math_matrix.h	/^            col_ref& operator\/=(mT v){$/;"	f	class:col_ref
+operator <	xg_datetime.h	/^bool operator<(const datetime & d1, const datetime & d2){$/;"	f
+operator <<	xg_math_matrix.h	/^    ostream& operator<<(ostream& o, const col_ref<mT>& v){$/;"	f
+operator <<	xg_math_matrix.h	/^    ostream& operator<<(ostream& o, const matrix<mT>& v){$/;"	f
+operator <<	xg_math_stat.h	/^ostream& operator<<( ostream & o, const regress2<T>& reg){$/;"	f
+operator <<	xg_math_stat.h	/^ostream& operator<<( ostream & o, const regress2_seg2<tt>& reg){$/;"	f
+operator <<	xg_math_stat.h	/^ostream& operator<<( ostream & o, const regress<tt>& reg){$/;"	f
+operator <<	xg_math_stat.h	/^ostream& operator<<( ostream & o, const regress_base<tt>& reg){$/;"	f
+operator <<	xg_math_stat.h	/^ostream& operator<<(ostream& o, const pcorr<T> & r){$/;"	f
+operator <<	xg_math_vector.h	/^    ostream& operator<<(ostream& o, const vector<T>& v){$/;"	f
+operator <<	xg_regression.h	/^ostream& operator<<(ostream& o, const xg_regress2<T>& r){$/;"	f
+operator <<	xg_regression.h	/^ostream& operator<<(ostream& o, const xg_seg2_regress2<T>& r){$/;"	f
+operator <<	xg_vector_math.h	/^    ostream& operator<<(ostream& o, const vector<T>& v){$/;"	f
+operator <=	xg_datetime.h	/^bool operator<=(const datetime & d1, const datetime & d2){$/;"	f
+operator =	xg_math_matrix.h	/^			col_ref operator=(col_ref& v){$/;"	f	class:col_ref
+operator =	xg_math_matrix.h	/^			col_ref operator=(const mT& v){$/;"	f	class:col_ref
+operator =	xg_math_matrix.h	/^			col_ref operator=(const vector<mT>& v){$/;"	f	class:col_ref
+operator ==	xg_datetime.h	/^bool operator==(const datetime & d1, const datetime & d2){$/;"	f
+operator >	xg_datetime.h	/^bool operator>(const datetime & d1, const datetime & d2){$/;"	f
+operator >	xg_math_vector.h	/^    vector<T1> operator>(const vector<T1>& a, const T2& b){$/;"	f
+operator >	xg_vector_math.h	/^    vector<T1> operator>(const vector<T1>& a, const T2& b){$/;"	f
+operator >=	xg_datetime.h	/^bool operator>=(const datetime & d1, const datetime & d2){$/;"	f
+operator []	bpch.h	/^        datablock& operator[](size_t index){$/;"	f	class:bpch
+operator []	bpch.h	/^        vector<vector<float> >& operator[](size_t i){$/;"	f	class:datablock
+operator []	xg_math_matrix.h	/^			mT& operator[](size_t i ){$/;"	f	class:col_ref
+operator ~	xg_math_matrix.h	/^    matrix<mT> operator~(const matrix<mT> & m){$/;"	f
+optimize	ensrf.h	/^		optimize(){}$/;"	f	class:optimize
+optimize	ensrf.h	/^class optimize$/;"	c
+out_dir	configclass.h	/^	const char * out_dir;$/;"	m	struct:fileconfig
+p_ftest	xg_math_stat.h	/^T p_ftest(const T& fvalue, size_t df1, size_t df2){$/;"	f
+p_value	xg_math_stat.h	/^        matrix<T> r, pr, t_value, p_value;$/;"	m	class:pcorr
+p_value	xg_regression.h	/^        T F, p_value;$/;"	m	class:xg_regress2
+pcorr	xg_math_stat.h	/^        pcorr(){};$/;"	f	class:pcorr
+pcorr	xg_math_stat.h	/^        pcorr(const vector<vector<T> > & d, string method="pearson"){$/;"	f	class:pcorr
+pcorr	xg_math_stat.h	/^class pcorr{$/;"	c
+pr	xg_math_stat.h	/^        matrix<T> r, pr, t_value, p_value;$/;"	m	class:pcorr
+ptile	Makefile	/^	bsub -I -n 20 -R "span[ptile=1]" mpirun -np 50 .\/main$/;"	m
+push	bpch.h	/^        void push(const datablock& db){$/;"	f	class:bpch
+push_back	xg_math_vector.h	/^    vector<T>& push_back(vector<T> & a, const vector<T> & b){$/;"	f
+push_back	xg_vector_math.h	/^    vector<T>& push_back(vector<T> & a, const vector<T> & b){$/;"	f
+pvalue	xg_math_stat.h	/^    T  fvalue, pvalue,b2;$/;"	m	struct:regress_base
+r	xg_math_stat.h	/^        matrix<T> r, pr, t_value, p_value;$/;"	m	class:pcorr
+rATA	xg_math_stat.h	/^    matrix<T> rATA;\/\/ A = { x00,.....xnn}, (A^TA)^{-1}$/;"	m	struct:regress_base
+rank	configclass.h	/^    int size, rank, name_len;$/;"	m	struct:mpi_config
+raster_transform	xg_georaster_transform.h	/^void raster_transform(const GeoRaster& GR1, const GeoRaster& GR2, T3 (*rf)(const T1 &, const T2 & ) , GeoTiffWriter& outRaster, bool skipNodata = true){$/;"	f
+raster_transform	xg_georaster_transform.h	/^void raster_transform(const GeoRaster& GRs,T2 (*rf)(const T1 & ) , GeoTiffWriter& outRaster, bool skipNodata = true){$/;"	f
+raster_transform	xg_georaster_transform.h	/^void raster_transform(const string & inputfile, T2 (*rf)(const T1 & ) , const string & outfilename, GDALDataType outDataType,  bool skipNodata = true){$/;"	f
+raster_transform	xg_georaster_transform.h	/^void raster_transform(const string & inputfile1, const string & inputfile2,$/;"	f
+rasterreduce	xg_georaster_reduce.h	/^void rasterreduce(const vector<GDALRasterBand * >& bands,T2 (*rf)(const vector<T1> & ) , GDALRasterBand* outBand, bool skipNodata = true){$/;"	f
+rasterreduce	xg_georaster_reduce.h	/^void rasterreduce(const vector<GDALRasterBand * >& bands1, const vector<GDALRasterBand * >& bands2,$/;"	f
+rasterreduce	xg_georaster_reduce.h	/^void rasterreduce(const vector<GeoRaster>& GRs,T2 (*rf)(const vector<T1> & ) , GeoTiffWriter& outRaster, bool skipNodata = true){$/;"	f
+rasterreduce	xg_georaster_reduce.h	/^void rasterreduce(const vector<GeoRaster>& GRs1,const vector<GeoRaster>& GRs2,$/;"	f
+rasterreduce	xg_georaster_reduce.h	/^void rasterreduce(const vector<string>& GRnames,T2 (*rf)(const vector<T1>&) , const string & outfilename, GDALDataType eDataType, bool skipNodata = true, T2 dstNodata = -10000){$/;"	f
+rasterreduce	xg_georaster_reduce.h	/^void rasterreduce(const vector<string>& GRnames1, const vector<string>& GRnames2, $/;"	f
+readF	bpch.h	/^        void readF(const string& f ){$/;"	f	class:bpch
+read_Regions	main.cpp	/^void read_Regions(const char *land_f)$/;"	f
+regions	main.cpp	/^REGIONS_MAP regions;$/;"	v
+regions_index	main.cpp	/^map<int, vector<pair<int, int> > > regions_index;$/;"	v
+regress	xg_math_stat.h	/^    regress(){}$/;"	f	struct:regress
+regress	xg_math_stat.h	/^    regress(const vector<vector<T> >& _x, const vector<T>& _y):$/;"	f	struct:regress
+regress	xg_math_stat.h	/^struct regress: public regress_base<T>{$/;"	s
+regress2	xg_math_stat.h	/^    regress2(){}$/;"	f	struct:regress2
+regress2	xg_math_stat.h	/^    regress2(const vector<vector<T> >& _x, const vector<T>& _y){$/;"	f	struct:regress2
+regress2	xg_math_stat.h	/^struct regress2 : public regress<T> {$/;"	s
+regress2_seg2	xg_math_stat.h	/^    regress2_seg2(){}$/;"	f	struct:regress2_seg2
+regress2_seg2	xg_math_stat.h	/^    regress2_seg2(const vector<T>& _x, const vector<T>& _y):$/;"	f	struct:regress2_seg2
+regress2_seg2	xg_math_stat.h	/^struct regress2_seg2: public regress_base<T>{$/;"	s
+regress_base	xg_math_stat.h	/^    regress_base(){}$/;"	f	struct:regress_base
+regress_base	xg_math_stat.h	/^    regress_base(const vector<vector<T> > & _x, const vector<T> & _y):$/;"	f	struct:regress_base
+regress_base	xg_math_stat.h	/^struct regress_base{$/;"	s
+rep	xg_math_base.h	/^vector<T> rep(T v, size_t N){$/;"	f
+reserved	bpch.h	/^        char modelname[21] , category[41] , unit[41] , reserved[41] ;$/;"	m	class:datablock
+residuals	xg_math_stat.h	/^    vector<T> y, b, estimated, residuals;$/;"	m	struct:regress_base
+resize	xg_math_matrix.h	/^            void resize(size_t _nrow, size_t _ncol){$/;"	f	class:matrix
+rho	configclass.h	/^	double rho;$/;"	m	struct:daconfig
+row	xg_math_matrix.h	/^            vector<mT> row(size_t i){$/;"	f	class:matrix
+rowmean	xg_math_matrix.h	/^	matrix<mT> rowmean(matrix<mT>& m)$/;"	f
+saveA	xg_math_matrix.h	/^	    void saveA(const char* f){$/;"	f	class:matrix
+saveB	xg_math_matrix.h	/^	   void saveB(const char* f){$/;"	f	class:matrix
+save_array	xg_math_matrix.h	/^	    matrix& save_array(const aa savearr){$/;"	f	class:matrix
+save_array	xg_math_matrix.h	/^	    void save_array(mT* a){$/;"	f	class:matrix
+sd	xg_math_stat.h	/^T sd(const vector<T>& x, size_t df = -1){$/;"	f
+seconds	xg_datetime.h	/^    int year, month, day, hour, minute, seconds;$/;"	m	struct:datetime
+seconds	xg_datetime.h	/^    int year, month, day, hour, minute, seconds;$/;"	m	struct:timespan
+seg1_R2	xg_math_stat.h	/^    T seg1_R2, seg1_fvalue, seg1_pvalue;$/;"	m	struct:regress2_seg2
+seg1_fvalue	xg_math_stat.h	/^    T seg1_R2, seg1_fvalue, seg1_pvalue;$/;"	m	struct:regress2_seg2
+seg1_pvalue	xg_math_stat.h	/^    T seg1_R2, seg1_fvalue, seg1_pvalue;$/;"	m	struct:regress2_seg2
+seg2_R2	xg_math_stat.h	/^    T seg2_R2, seg2_fvalue, seg2_pvalue;$/;"	m	struct:regress2_seg2
+seg2_fvalue	xg_math_stat.h	/^    T seg2_R2, seg2_fvalue, seg2_pvalue;$/;"	m	struct:regress2_seg2
+seg2_pvalue	xg_math_stat.h	/^    T seg2_R2, seg2_fvalue, seg2_pvalue;$/;"	m	struct:regress2_seg2
+select_ref	xg_math_matrix.h	/^	col_ref<T> select_ref(vector<T>& v, const vector<size_t>& idx){$/;"	f
+seq	xg_math_base.h	/^vector<T> seq(const T& from, const T& to, const T& by = 1){$/;"	f
+seq	xg_math_base.h	/^vector<T> seq(const T& from, const T& to, size_t length){$/;"	f
+setcol	xg_math_matrix.h	/^            void setcol(size_t j, const vector<mT>& _col){$/;"	f	class:matrix
+setdim	bpch.h	/^        void setdim(int d1, int d2, int d3, int d4, int d5, int d6){$/;"	f	class:datablock
+setrow	xg_math_matrix.h	/^            void setrow(size_t i, const vector<mT>& _row){$/;"	f	class:matrix
+setvalue	bpch.h	/^        void setvalue(float v){$/;"	f	class:datablock
+show_BPLUT	observeoperation.h	/^void show_BPLUT( ){$/;"	f
+show_str_list	bpch.h	/^void show_str_list(char * s){$/;"	f
+showdata	bpch.h	/^        void showdata(){$/;"	f	class:datablock
+showheader	bpch.h	/^        void showheader(){$/;"	f	class:bpch
+showheader	bpch.h	/^        void showheader(){$/;"	f	class:datablock
+sin	xg_math_vector.h	/^    vector<T> sin(const vector<T>& a){$/;"	f
+sin	xg_vector_math.h	/^    vector<T> sin(const vector<T>& a){$/;"	f
+size	bpch.h	/^        size_t size(){$/;"	f	class:bpch
+size	configclass.h	/^    int size, rank, name_len;$/;"	m	struct:mpi_config
+size	xg_math_matrix.h	/^			size_t size(){$/;"	f	class:col_ref
+skip	bpch.h	/^        int halfpolar, center180, tracer, dim[6], skip;$/;"	m	class:datablock
+sqrt	xg_math_matrix.h	/^    matrix<mT> sqrt(const matrix<mT>& m)$/;"	f
+sqrt	xg_math_vector.h	/^    vector<T> sqrt(vector<T> a){$/;"	f
+sqrt	xg_vector_math.h	/^    vector<T> sqrt(vector<T> a){$/;"	f
+start_date	configclass.h	/^	datetime start_date;	$/;"	m	struct:daconfig
+str	xg_datetime.h	/^    string str(const string& frmt = "YYYY-MM-DD hh:mm:ss")const{$/;"	f	struct:datetime
+str_cpy	bpch.h	/^void str_cpy(char * s, const char *p){$/;"	f
+sub	xg_math_vector.h	/^    vector<T> sub(const vector<T> & a, size_t from , size_t to){$/;"	f
+sub	xg_vector_math.h	/^    vector<T> sub(const vector<T> & a, size_t from , size_t to){$/;"	f
+subright	xg_math_vector.h	/^    vector<T> subright(const vector<T> & a, size_t from){$/;"	f
+subright	xg_vector_math.h	/^    vector<T> subright(const vector<T> & a, size_t from){$/;"	f
+sum	xg_math_vector.h	/^    T sum(const vector<T>& a){$/;"	f
+sum	xg_vector_math.h	/^    T sum(const vector<T>& a){$/;"	f
+swapcol	xg_math_matrix.h	/^            matrix& swapcol(size_t i, size_t j){$/;"	f	class:matrix
+swaprow	xg_math_matrix.h	/^            matrix& swaprow(size_t i, size_t j){$/;"	f	class:matrix
+t	xg_math_matrix.h	/^    matrix<mT> t(const matrix<mT> & m){$/;"	f
+t_value	xg_math_stat.h	/^        matrix<T> r, pr, t_value, p_value;$/;"	m	class:pcorr
+tau	configclass.h	/^    double tau;$/;"	m	struct:mod_data
+tau	configclass.h	/^    double tau;$/;"	m	struct:observation
+tau	xg_datetime.h	/^    double tau()const{$/;"	f	struct:datetime
+tau0	bpch.h	/^        double tau0, tau1;$/;"	m	class:datablock
+tau1	bpch.h	/^        double tau0, tau1;$/;"	m	class:datablock
+timespan	xg_datetime.h	/^    timespan(int y = 0, int M = 0, int d = 0, int h=0, int m=0, int s=0):$/;"	f	struct:timespan
+timespan	xg_datetime.h	/^struct timespan{$/;"	s
+toGeoTIFF	bpch.h	/^        void toGeoTIFF(const char *s){$/;"	f	class:datablock
+tolower	xg_str.h	/^    string tolower(string x){$/;"	f	namespace:xg
+toptitle	bpch.h	/^        char ftype[41] , toptitle[81] ;$/;"	m	class:bpch
+toupper	xg_str.h	/^    string toupper(string x){$/;"	f	namespace:xg
+tracer	bpch.h	/^        int halfpolar, center180, tracer, dim[6], skip;$/;"	m	class:datablock
+trim	xg_str.h	/^    string trim(const string& str){$/;"	f	namespace:xg
+ttest	xg_math_stat.h	/^    void ttest(){$/;"	f	struct:regress_base
+tvalues	xg_math_stat.h	/^    vector<T> tvalues, tvalues_p;$/;"	m	struct:regress_base
+tvalues_p	xg_math_stat.h	/^    vector<T> tvalues, tvalues_p;$/;"	m	struct:regress_base
+uniform	bpch.h	/^        void uniform(){$/;"	f	class:datablock
+uniform	xg_datetime.h	/^    void uniform(){$/;"	f	struct:datetime
+unit	bpch.h	/^        char modelname[21] , category[41] , unit[41] , reserved[41] ;$/;"	m	class:datablock
+unixtime	xg_datetime.h	/^    long long unixtime()const{ $/;"	f	struct:datetime
+value	configclass.h	/^    double value,mdm;$/;"	m	struct:mod_data
+value	configclass.h	/^    double value,mdm;$/;"	m	struct:observation
+var	xg_math_stat.h	/^T var(const vector<T>& x, long long df = -1){$/;"	f
+vector_randn	xg_math_vector.h	/^double vector_randn(double E,double V,double min,double max)$/;"	f
+vector_randn	xg_math_vector.h	/^vector<double> vector_randn(int M,double E,double V,double min,double max)$/;"	f
+vector_randn_boost	xg_math_vector.h	/^void vector_randn_boost(vector<double>& rand,int M,double E,double V,double min,double max)$/;"	f
+whichmax	xg_math_vector.h	/^    size_t whichmax(const vector<T>& a){$/;"	f
+whichmax	xg_vector_math.h	/^    size_t whichmax(const vector<T>& a){$/;"	f
+whichmin	xg_math_vector.h	/^    size_t whichmin(const vector<T>& a){$/;"	f
+whichmin	xg_vector_math.h	/^    size_t whichmin(const vector<T>& a){$/;"	f
+writeF	bpch.h	/^        void writeF(const string& f ){$/;"	f	class:bpch
+write_input_geos	obs_back.h	/^void write_input_geos(const char* geos_output, const vector<observation>& obs, const datetime & start_date, const datetime& end_date_inter,const datetime& end_date){$/;"	f
+write_scaling_factor	obs_back.h	/^void write_scaling_factor(const string& f, const vector<double>& v, daconfig dc, fileconfig fc, double tau_start, double tau_end){$/;"	f
+x	xg_math_stat.h	/^    vector<vector<T> > x;$/;"	m	struct:regress_base
+x	xg_regression.h	/^        vector<T> x,y;$/;"	m	class:xg_regress2
+x	xg_regression.h	/^        vector<T> x,y;$/;"	m	class:xg_seg2_regress2
+x_b_bar	ensrf.h	/^            	MatrixXf X_b,x_b_bar;$/;"	m	class:optimize
+x_b_inflation	ensrf.h	/^	    MatrixXf x_b_inflation,PHt,HPHt,K_gain;$/;"	m	class:optimize
+xg	xg_str.h	/^namespace xg{$/;"	n
+xg_regress2	xg_regression.h	/^        xg_regress2(){}$/;"	f	class:xg_regress2
+xg_regress2	xg_regression.h	/^        xg_regress2(const vector<T>& x, const vector<T>& y):$/;"	f	class:xg_regress2
+xg_regress2	xg_regression.h	/^class xg_regress2{$/;"	c
+xg_seg2_regress2	xg_regression.h	/^        xg_seg2_regress2(const vector<T>& x, const vector<T>& y):$/;"	f	class:xg_seg2_regress2
+xg_seg2_regress2	xg_regression.h	/^class xg_seg2_regress2{$/;"	c
+y	xg_math_stat.h	/^    vector<T> y, b, estimated, residuals;$/;"	m	struct:regress_base
+y	xg_regression.h	/^        vector<T> x,y;$/;"	m	class:xg_regress2
+y	xg_regression.h	/^        vector<T> x,y;$/;"	m	class:xg_seg2_regress2
+y_b	ensrf.h	/^            MatrixXf Y_b, y_o, y_b, y_b_bar, y_b_bar_met;$/;"	m	class:optimize
+y_b_bar	ensrf.h	/^            MatrixXf Y_b, y_o, y_b, y_b_bar, y_b_bar_met;$/;"	m	class:optimize
+y_b_bar_met	ensrf.h	/^            MatrixXf Y_b, y_o, y_b, y_b_bar, y_b_bar_met;$/;"	m	class:optimize
+y_o	ensrf.h	/^            MatrixXf Y_b, y_o, y_b, y_b_bar, y_b_bar_met;$/;"	m	class:optimize
+year	xg_datetime.h	/^    int year, month, day, hour, minute, seconds;$/;"	m	struct:datetime
+year	xg_datetime.h	/^    int year, month, day, hour, minute, seconds;$/;"	m	struct:timespan
