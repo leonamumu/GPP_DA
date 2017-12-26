@@ -57,7 +57,7 @@ class statevector: public deque<matrix<Tm> >{
 			for(size_t k = 0;k < _nrow;++k)
 			{
 				vector<Tm> rands1(_ncol);
-				vector_randn_boost(rands1, _ncol, 1, 1, 0, 2);
+				vector_randn_boost(rands1, _ncol, 0.5, 0.4, 0.3, 0.7);
 				for(size_t j = 0;j < _ncol;++j)
 					(*this)[lag][k][j] = rands1[j]; 
 			}
@@ -72,25 +72,25 @@ class statevector: public deque<matrix<Tm> >{
 			matrix<double> covstd(_nrow, 1);
 			for(size_t i = 0;i < _nrow;++i)
 			{
-				covstd[i][0] = ((sd(x_b.get_row(i))) + 1)  / 2;
+				covstd[i][0] = ((sd(x_b.get_row(i))) + 0.2)  / 2;
 			}
 		    debug(covstd);	
 			for(size_t i = 0;i < _nrow;++i)
 			{
 				vector<Tm> rands1(_ncol);
-				vector_randn_boost(rands1, _ncol, 0, covstd[i][0] * covstd[i][0], -1, 1);
+				vector_randn_boost(rands1, _ncol, 0, covstd[i][0] * covstd[i][0], 0.2, 0.7);
 				for(size_t j = 0;j < _ncol;++j)
-					//(*this)[0][i][j] = rands1[j] + (x_b_bar(i,0) + 1) / 2;
-					(*this)[0][i][j] = rands1[j] * covstd[j+1][0] +  (x_b_bar[j][0] + 1) / 2;
+					//(*this)[0][i][j] = rands1[j] + (x_b_bar(i,0) + 0.5) / 2;
+					(*this)[0][i][j] = rands1[j] * covstd[j+1][0] +  (x_b_bar[j][0] + 0.5) / 2;
 			    	
 					
 			}
 				vector<Tm> rands2(_ncol);
 				for(size_t j = 0;j < _nrow;++j)
 				{
-					if(covstd[j][0] > 2)
+					if(covstd[j][0] > 2 || covstd[0][j] < 0) 
 					{
-						vector_randn_boost(rands2, _ncol, 1, 1, 0, 2);
+						vector_randn_boost(rands2, _ncol, 0.5, 0.4, 0.3, 0.7);
 						
 						for(size_t k = 0;k < _ncol;++k)
 							(*this)[0][j][k] = rands2[k];	
