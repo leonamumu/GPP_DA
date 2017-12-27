@@ -88,7 +88,7 @@ class statevector: public deque<matrix<Tm> >{
 				vector<Tm> rands2(_ncol);
 				for(size_t j = 0;j < _nrow;++j)
 				{
-					if(covstd[j][0] > 2 || covstd[0][j] < 0) 
+					if(covstd[j][0] > 0.7 || covstd[0][j] < 0.3) 
 					{
 						vector_randn_boost(rands2, _ncol, 0.5, 0.4, 0.3, 0.7);
 						
