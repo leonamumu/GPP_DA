@@ -65,7 +65,7 @@ class statevector: public deque<matrix<Tm> >{
 		bool Propagate(daconfig dc, MatrixXf& x_b_bar)
 		{
 			bool rt = false;
-			matrix<Tm> temp(_nrow, _ncol);
+			/*matrix<Tm> temp(_nrow, _ncol);
 			
 			matrix<Tm> x_b = (*this)[0];		
 
@@ -81,21 +81,20 @@ class statevector: public deque<matrix<Tm> >{
 				vector_randn_boost(rands1, _ncol, 0, covstd[i][0] * covstd[i][0], 0.3, 0.7);
 				for(size_t j = 0;j < _ncol;++j)
 					(*this)[0][i][j] = rands1[j] + (x_b_bar(i,0) + 0.5) / 2;
-					//(*this)[0][i][j] = rands1[j] * covstd[j][0] +  (x_b_bar(i,0) + 0.5) / 2;
 			    	
 					
 			}
 				vector<Tm> rands2(_ncol);
 				for(size_t j = 0;j < _nrow;++j)
 				{
-					if(covstd[j][0] > 0.7 || covstd[j][0] < 0.3) 
+					if(covstd[j][0] > 2 || covstd[j][0] < 0) 
 					{
 						vector_randn_boost(rands2, _ncol, 0.5, 0.04, 0.3, 0.7);
 						
 						for(size_t k = 0;k < _ncol;++k)
 							(*this)[0][j][k] = rands2[k];	
 					}
-				}
+				}*/
 			rt = true;	
 			return rt;		
 		}
