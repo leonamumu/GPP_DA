@@ -17,8 +17,8 @@ using namespace Eigen;
 using Eigen::MatrixXf;
 
 //double LUE_def[17] = {0,2.298,2.532,1.81,2.202,2.282,1.556,1.556,1.748,4.332,1.662,0,2.218,0,2.218,0,0};
-//double LUE_def[17] = {0,1.9236,1.7044,2.114,2.5514,1.937, 0.6702, 1.348, 1.311, 1.951, 2.0622,0,1.7658,0,0,0,0};
-double LUE_def[13] = {0,1.9236,1.7044,2.114,2.5514,1.937, 0.6702, 1.348, 1.311, 1.951, 2.0622,0,1.7658};
+//double LUE_def[17] = {0,1.9236,1.7044,2.114,2.5514,1.937,0.6702,1.348,1.311,1.951,2.0622,0,1.7658,0,0,0,0};
+double LUE_def[13] = {0,1.9236,1.7044,2.114,2.5514,1.937,0.6702,1.348,1.311,1.951,2.0622,0,1.7658};
 
 template<typename Tm>
 class statevector: public deque<matrix<Tm> >{ 
@@ -57,7 +57,7 @@ class statevector: public deque<matrix<Tm> >{
 			for(size_t k = 0;k < _nrow;++k)
 			{
 				vector<Tm> rands1(_ncol);
-				vector_randn_boost(rands1, _ncol, 0.5, 0.04, 0.3, 0.7);
+				vector_randn_boost(rands1, _ncol, 1, 1, 0, 2);
 				for(size_t j = 0;j < _ncol;++j)
 					(*this)[lag][k][j] = rands1[j]; 
 			}
@@ -72,15 +72,15 @@ class statevector: public deque<matrix<Tm> >{
 			matrix<double> covstd(_nrow, 1);
 			for(size_t i = 0;i < _nrow;++i)
 			{
-				covstd[i][0] = ((sd(x_b.get_row(i))) + 0.2)  / 2;
+				covstd[i][0] = ((sd(x_b.get_row(i))) + 1)  / 2;
 			}
 		    debug(covstd);	
 			for(size_t i = 0;i < _nrow;++i)
 			{
 				vector<Tm> rands1(_ncol);
-				vector_randn_boost(rands1, _ncol, 0, covstd[i][0] * covstd[i][0], 0.3, 0.7);
+				vector_randn_boost(rands1, _ncol, 0, covstd[i][0] * covstd[i][0], 0, 2);
 				for(size_t j = 0;j < _ncol;++j)
-					(*this)[0][i][j] = rands1[j] + (x_b_bar(i,0) + 0.5) / 2;
+					(*this)[0][i][j] = rands1[j] + (x_b_bar(i,0) + 1) / 2;
 			    	
 					
 			}
@@ -89,7 +89,7 @@ class statevector: public deque<matrix<Tm> >{
 				{
 					if(covstd[j][0] > 2 || covstd[j][0] < 0) 
 					{
-						vector_randn_boost(rands2, _ncol, 0.5, 0.04, 0.3, 0.7);
+						vector_randn_boost(rands2, _ncol, 1, 1, 0, 2);
 						
 						for(size_t k = 0;k < _ncol;++k)
 							(*this)[0][j][k] = rands2[k];	
