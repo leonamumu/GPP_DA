@@ -42,8 +42,8 @@ class obs_c
 			printf("reading stations output :%s\n", GPP_str);
 			datetime obs_time(DA_itr.year, DA_itr.month, DA_itr.day, DA_itr.hour);
 			int ii = 0;
-                        vector<double> rands(703);
-			vector_randn_boost(rands, 703, 0, 1, -1, 1);
+                        vector<double> rands(2701); //观测值空间分辨率为1°x1°，根据间隔5°采样一次观测值：构建随机向量73*37
+			vector_randn_boost(rands, 2701, 0, 1, -1, 1);
     			
 			GDALDataset *data = (GDALDataset*) GDALOpen(GPP_str, GA_ReadOnly);
     			assert(data != NULL);
@@ -52,10 +52,10 @@ class obs_c
 
 			int NaNs = band -> GetNoDataValue();
     			int YSize = band->GetYSize(), XSize = band->GetXSize();
-    			for(int line = 0; line < YSize; line=line + 10){
+    			for(int line = 0; line < YSize; line=line + 5){
         			vector<double> lines;
             			lines = ReadLine(band, line);
-        			for(int i = 0; i < XSize; i =i + 10){
+        			for(int i = 0; i < XSize; i =i + 5){
 				    	buf_o.geosI = i + 1;
 					buf_o.geosJ = line + 1;
 					buf_o.alt   = 1;
