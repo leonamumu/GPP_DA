@@ -126,13 +126,13 @@ class optimize
 			    {
 					Coef(i,0) = 0;
 			    		
-					index_v = regions_index[i % dc.Class].size() / 2;
+					/*index_v = regions_index[i % dc.Class].size() / 2;
 					b_x =  regions_index[i % dc.Class][index_v].first; 
 					b_y = regions_index[i % dc.Class][index_v].second;
 					if(abs(b_x - a_x) > 5 || abs(b_y - a_y) > 5)
 			   			continue;
 					L = sqrt(pow(a_x - b_x,2) +  pow(a_y - b_y,2));
-					Coef(i,0) = exp(-L/7);
+					Coef(i,0) = exp(-L/7);*/
 			   }
 			   Coef(index_r,0) = 1;
 			   debug(index_v);
